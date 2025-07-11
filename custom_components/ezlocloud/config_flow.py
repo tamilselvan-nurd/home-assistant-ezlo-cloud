@@ -4,6 +4,7 @@ import logging
 import voluptuous as vol
 
 from homeassistant import config_entries
+from homeassistant.config_entries import ConfigFlowResult
 from homeassistant.core import callback
 
 from .const import DOMAIN
@@ -13,14 +14,15 @@ _LOGGER = logging.getLogger(__name__)
 
 
 class ExampleConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Example config flow."""
+    """Config flow for Ezlo HA Cloud."""
 
     # The schema version of the entries that it creates
     # Home Assistant will call your migrate method if the version changes
     VERSION = 1
     MINOR_VERSION = 1
 
-    async def async_step_user(self, user_input=None):
+    async def async_step_user(self, user_input=None) -> ConfigFlowResult:
+        """Handle the initial step of the config flow."""
         # """Initial setup form."""
         errors = {}
 

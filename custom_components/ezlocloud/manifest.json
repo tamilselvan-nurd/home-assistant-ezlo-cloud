@@ -1,11 +1,10 @@
 {
-  "domain": "ezlocloud",
+  "domain": "ezlohacloud",
   "name": "Ezlo HA Cloud",
-  "version": "1.0.0",
   "codeowners": ["@ezlotamilselvan"],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://www.home-assistant.io/integrations/ezlocloud",
+  "documentation": "https://www.home-assistant.io/integrations/ezlohacloud",
   "homekit": {},
   "iot_class": "cloud_polling",
   "requirements": ["requests", "tomli", "tomlkit", "aiohttp"],
