@@ -1,0 +1,29 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+logger:
+  default: info
+  logs:
+    homeassistant.components.cloud: debug
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 127.0.0.1 # localhost
+    - ::1 # localhost for IPv6
+    - 137.184.147.158 # Your DigitalOcean server's public IP
+    - 172.17.0.1 # The proxy IP reported in the error
+
+# In your Home Assistant configuration.yaml
+rest_command:
+  call_go_api:
+    url: "http://host.docker.internal:8080/api-endpoint"
+    method: GET
