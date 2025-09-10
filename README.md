@@ -34,35 +34,3 @@ After installation, you can configure the integration through the Home Assistant
 2. Click **Add Integration**
 3. Search for "Ezlo HA Cloud"
 4. Follow the configuration flow
-
-## Requirements
-
-- Home Assistant 2023.1.0 or later
-- Python packages: `requests`, `tomli`, `tomlkit`, `aiohttp`
-
-## Features
-
-- Cloud polling integration
-- Config flow support
-- HomeKit compatibility
-
-## Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/tskezlo/home-assistant-ezlo-cloud/issues) page
-2. Create a new issue if your problem isn't already reported
-3. Provide as much detail as possible about your setup and the issue
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Home Assistant community
-- Ezlo team for providing the cloud API
